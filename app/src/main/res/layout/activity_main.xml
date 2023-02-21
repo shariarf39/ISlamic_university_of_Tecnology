@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
     <TextView
@@ -106,13 +109,18 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:srcCompat="@drawable/image1" />
 
+
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+
         android:text="About : Get ready for an electrifying business experience as the Business and Technology Department at IUT presents its flagship event, &quot;Beyond The Metrics-2023&quot; This event is designed to bridge the gap between technology and business, connecting industry leaders with the next generation of world leaders. Join us, as we explore the latest trends in product development, innovation, and more. This is a unique opportunity to gain valuable insights, network with professionals, and ignite your passion for business and technology. This inaugural event will showcase the talents and creativity of business and tech-focused students from schools, colleges and universities all over Bangladesh through its 6 signature events. The theme for this year's event is: &quot;𝐋𝐞𝐯𝐞𝐫𝐚𝐠𝐢𝐧𝐠 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐟𝐨𝐫 𝐭𝐫𝐚𝐧𝐬𝐜𝐞𝐧𝐝𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐚𝐫𝐫𝐢𝐞𝐫𝐬 𝐰𝐢𝐭𝐡𝐢𝐧&quot;"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
